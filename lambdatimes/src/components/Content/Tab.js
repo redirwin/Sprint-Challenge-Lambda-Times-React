@@ -18,10 +18,12 @@ const Tab = props => {
   return (
     <div
       className={`${getClassName()}`}
-      onClick={() => {
-        /* Replace this dummy click handler function with your selectTabHandler function from props 
-         you'll need to pass the `tab` in as an argument to this handler. */
-      }}
+      // onClick={(e, props.tab) =>
+      //   /* Replace this dummy click handler function with your selectTabHandler function from props
+      //    you'll need to pass the `tab` in as an argument to this handler. */
+      //    props.selectTabHandler(e, props.tab)
+      // }
+      onClick={e => props.selectTabHandler(e, props.tab)}
     >
       {props.tab.toUpperCase()}
     </div>
