@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = props => {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="card">
       <div className="headline">{props.card.headline}</div>
