@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Tab from "./Tab";
 import { arrayExpression } from "@babel/types";
 const Tabs = props => {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="tabs">
       <div className="topics">

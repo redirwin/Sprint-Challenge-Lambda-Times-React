@@ -1,12 +1,23 @@
 import React from "react";
 
 const Tab = props => {
+  console.log(props);
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
       if they match, the className should be: 'tab active-tab', 
       if it is not it should just be 'tab'*/
+
+  const getClassName = () => {
+    if (props.tab === props.selectedTab) {
+      return "tab active-tab";
+    } else {
+      return "tab";
+    }
+  };
+  // console.log(getClassName());
+
   return (
     <div
-      className={""}
+      className={`${getClassName()}`}
       onClick={() => {
         /* Replace this dummy click handler function with your selectTabHandler function from props 
          you'll need to pass the `tab` in as an argument to this handler. */
