@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Tab from "./Tab";
 import { arrayExpression } from "@babel/types";
 const Tabs = props => {
-  // console.log(props);
   return (
     <div className="tabs">
       <div className="topics">
@@ -12,7 +11,6 @@ const Tabs = props => {
             give the tab component a `selectTabHandler`, the `selectedTab`, and the `tab` itself as props*/}
 
         {props.tabs.map(tab => {
-          // console.log("inside map");
           return (
             <Tab
               selectTabHandler={props.selectTabHandler}
